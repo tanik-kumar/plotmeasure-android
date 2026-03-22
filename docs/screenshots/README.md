@@ -1,6 +1,6 @@
 # Screenshots
 
-Use this folder for the public screenshot set referenced by the repository README and GitHub release pages.
+This folder contains the public screenshot set referenced by the repository README and GitHub release pages.
 
 Reference set for `v1.0.0`:
 
@@ -15,8 +15,7 @@ Reference set for `v1.0.0`:
 - `05-area-measurement-edit-selected-point.jpg`
   Deep-zoom area measurement view with polygon overlay, segment labels, centroid, and selected-point adjust controls.
 
-Recommended notes:
+Notes:
 
-- Keep screenshots portrait to match the current phone-first layout.
-- Prefer clean capture without OS notifications.
-- Replace this reference document with actual image files only when the final approved screenshots are ready.
+- Screenshots are portrait because the current app workflow is phone-first.
+- Keep future screenshots clean and captured from the signed release when possible.

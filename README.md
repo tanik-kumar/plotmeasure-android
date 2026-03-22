@@ -10,6 +10,34 @@ Releases: https://github.com/tanik-kumar/plotmeasure-android/releases
 
 Topics: `android`, `kotlin`, `jetpack-compose`, `pdf`, `pdf-renderer`, `land-measurement`, `cadastral-maps`, `survey-maps`, `revisional-map`
 
+## Install
+
+- Platform: Android
+- Minimum Android version: `minSdk 24` (`Android 7.0`)
+- Latest signed release APK: `PlotMeasure-v1.0.0-release.apk`
+- GitHub releases: https://github.com/tanik-kumar/plotmeasure-android/releases
+- SHA-256: `d5d9cef4127d15598f0a8c70304b37300e381cd7f420c77e41ae74ddb1eb57d9`
+
+Direct install steps:
+
+1. Download the signed APK from the GitHub Releases page.
+2. Allow installation from the browser or file manager if Android asks.
+3. Open the APK and install.
+4. Launch `PlotMeasure v1.0.0`.
+
+## Screenshots
+
+Screenshots should be added under [docs/screenshots/README.md](/Users/tanik/Projects/biharmapmeasure/docs/screenshots/README.md).
+
+Suggested set:
+
+- Home screen
+- Page selection
+- Large-view calibration
+- Area measurement
+- Point editing / nudge controls
+- Export results
+
 ## Stack
 
 - Kotlin
@@ -158,6 +186,28 @@ Large PDFs are handled with two render layers:
 
 This reduces memory pressure versus rendering the full page at extreme zoom while keeping point placement sharp enough for cadastral work.
 
+## Privacy and Data
+
+- PDF files are accessed from device storage only after user selection.
+- Measurement projects and settings are stored locally on device.
+- Data is not uploaded by the app unless the user explicitly exports files or shares artifacts outside the app.
+- Release signing files must remain private and must not be committed.
+
+## Known Limitations
+
+- OCR-based automatic scale extraction is not included in `v1.0.0`.
+- Measurement accuracy depends on PDF quality, page calibration, and point placement precision.
+- Edge snapping is bitmap-based and may be less reliable on noisy scans.
+- Very large or highly detailed PDFs can still require more render time during deep zoom.
+
+## Roadmap
+
+- OCR-assisted scale detection
+- Better snapped boundary detection for scanned maps
+- Richer export layouts with annotated preview images
+- Improved project management across multiple sheets
+- More regional unit presets and conversion templates
+
 ## Setup
 
 1. Open the project in Android Studio Giraffe+ or Hedgehog+.
@@ -166,6 +216,12 @@ This reduces memory pressure versus rendering the full page at extreme zoom whil
 
 ```bash
 ./gradlew assembleDebug
+```
+
+For a signed release build:
+
+```bash
+./gradlew assembleRelease copyNamedReleaseApk
 ```
 
 ## Usage
@@ -188,3 +244,15 @@ Run:
 ```bash
 ./gradlew testDebugUnitTest
 ```
+
+## Release Notes
+
+Current release: `v1.0.0`
+
+- First signed Android release
+- PDF calibration and polygon tracing workflow
+- Distance, perimeter, and area calculation
+- Local land-unit conversion support
+- Export support and stable large-view editing
+
+See [CHANGELOG.md](/Users/tanik/Projects/biharmapmeasure/CHANGELOG.md) for the detailed history.

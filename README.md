@@ -27,16 +27,15 @@ Direct install steps:
 
 ## Screenshots
 
-Screenshots should be added under [docs/screenshots/README.md](/Users/tanik/Projects/biharmapmeasure/docs/screenshots/README.md).
+Screenshots are documented under [docs/screenshots/README.md](/Users/tanik/Projects/biharmapmeasure/docs/screenshots/README.md).
 
-Suggested set:
+Reference set for `v1.0.0`:
 
-- Home screen
-- Page selection
-- Large-view calibration
-- Area measurement
-- Point editing / nudge controls
-- Export results
+- `01-home-empty-state.jpg`
+- `02-page-picker-dialog.jpg`
+- `03-map-loaded-overview.jpg`
+- `04-calibration-large-view.jpg`
+- `05-area-measurement-edit-selected-point.jpg`
 
 ## Stack
 

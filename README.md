@@ -31,19 +31,17 @@ Screenshot files are stored under [docs/screenshots/README.md](/Users/tanik/Proj
 
 ### Home and Page Selection
 
-![Home empty state](docs/screenshots/01-home-empty-state.jpg)
-
-![Page picker dialog](docs/screenshots/02-page-picker-dialog.jpg)
+<img src="docs/screenshots/01-home-empty-state.jpg" alt="Home empty state" width="220" />
+<img src="docs/screenshots/02-page-picker-dialog.jpg" alt="Page picker dialog" width="220" />
 
 ### Map Overview and Calibration
 
-![Map loaded overview](docs/screenshots/03-map-loaded-overview.jpg)
-
-![Calibration large view](docs/screenshots/04-calibration-large-view.jpg)
+<img src="docs/screenshots/03-map-loaded-overview.jpg" alt="Map loaded overview" width="220" />
+<img src="docs/screenshots/04-calibration-large-view.jpg" alt="Calibration large view" width="220" />
 
 ### Measurement Editing
 
-![Area measurement with selected-point adjustment](docs/screenshots/05-area-measurement-edit-selected-point.jpg)
+<img src="docs/screenshots/05-area-measurement-edit-selected-point.jpg" alt="Area measurement with selected-point adjustment" width="220" />
 
 ## Stack
 

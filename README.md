@@ -2,6 +2,12 @@
 
 PlotMeasure is an Android app for measuring land/plot distance, perimeter, and area directly from cadastral PDF maps. It is built in Kotlin with Jetpack Compose and keeps all measurement points in PDF page coordinates so overlays stay accurate during zoom and pan.
 
+## About
+
+PlotMeasure is built for land and cadastral PDF maps, especially survey sheets that include printed ratio scales, text scales, or scale bars. The app lets users import a map PDF, select a page, calibrate the page scale, place boundary points, and calculate distance, perimeter, and area in both standard and local land units.
+
+This repository contains the Android source code, release configuration, tests, and signed release packaging workflow for `v1.0.0`.
+
 ## Stack
 
 - Kotlin

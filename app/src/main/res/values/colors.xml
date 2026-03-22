@@ -1,0 +1,23 @@
+<resources>
+    <color name="sand_050">#FDF8EF</color>
+    <color name="sand_0">#FFF8F1</color>
+    <color name="sand_100">#F4E7D5</color>
+    <color name="sand_200">#E8D6BE</color>
+    <color name="sand_300">#D6BFA0</color>
+    <color name="terracotta_200">#E8B99F</color>
+    <color name="terracotta_600">#B55836</color>
+    <color name="terracotta_700">#934321</color>
+    <color name="forest_100">#DCE9E2</color>
+    <color name="forest_600">#2E6A57</color>
+    <color name="forest_700">#204D40</color>
+    <color name="slate_200">#D4D8D3</color>
+    <color name="slate_300">#C2C8C1</color>
+    <color name="slate_500">#78807A</color>
+    <color name="slate_700">#5B625D</color>
+    <color name="slate_800">#3C433F</color>
+    <color name="ink_900">#1B1F1A</color>
+    <color name="paper_0">#FFFFFC</color>
+    <color name="paper_glass">#F5FFF8F1</color>
+    <color name="paper_glass_strong">#FCFFF8F0</color>
+    <color name="result_surface">#FFF3E4</color>
+</resources>

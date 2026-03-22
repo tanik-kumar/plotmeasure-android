@@ -80,7 +80,7 @@ fun PlotMeasureApp(viewModel: PlotMeasureViewModel) {
         }
 
     val exportLauncher =
-        rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/octet-stream")) { uri ->
+        rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("*/*")) { uri ->
             val pendingExport = uiState.pendingExport
             if (uri != null && pendingExport != null) {
                 viewModel.exportToUri(uri, pendingExport.format)
@@ -206,6 +206,11 @@ fun PlotMeasureApp(viewModel: PlotMeasureViewModel) {
                         onClick = viewModel::toggleLargeView,
                         enabled = uiState.hasDocument,
                         label = { Text(if (uiState.isLargeViewEnabled) "Panel" else "Large") },
+                    )
+                    AssistChip(
+                        onClick = { viewModel.prepareExport(ExportFormat.PDF) },
+                        enabled = uiState.currentPageState != null,
+                        label = { Text("PDF") },
                     )
                     AssistChip(
                         onClick = { viewModel.prepareExport(ExportFormat.JSON) },

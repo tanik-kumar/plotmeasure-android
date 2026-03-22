@@ -80,6 +80,7 @@ data class CalibrationMetadata(
     val groundDistanceValue: Double? = null,
     val groundDistanceUnit: LinearUnit? = null,
     val referenceType: ManualReferenceType? = null,
+    val referencePoints: List<MeasurementPoint> = emptyList(),
 )
 
 @Serializable

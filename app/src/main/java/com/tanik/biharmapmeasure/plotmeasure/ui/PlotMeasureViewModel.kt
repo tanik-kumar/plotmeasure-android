@@ -47,7 +47,7 @@ class PlotMeasureViewModel(
     private val projectRepository = JsonProjectRepository(application, json)
     private val settingsRepository = SettingsRepository(application, json)
     private val crashReportStore = CrashReportStore(application)
-    private val reportExporter = ReportExporter(application.contentResolver, json)
+    private val reportExporter = ReportExporter(application, json)
     private val undoManager = UndoManager<PdfProject>()
     private val calibrationRedoStack = mutableListOf<MeasurementPoint>()
 
@@ -558,7 +558,18 @@ class PlotMeasureViewModel(
                 _uiState.value = _uiState.value.copy(message = error.message)
                 return
             }
-        applyCalibration(calibration, saveAsPreset)
+        applyCalibration(
+            calibration.copy(
+                metadata =
+                    calibration.metadata.copy(
+                        referencePoints =
+                            capturePoints.mapIndexed { index, point ->
+                                point.copy(labelOverride = "C${index + 1}")
+                            },
+                    ),
+            ),
+            saveAsPreset,
+        )
     }
 
     fun applyRatioCalibration(
@@ -746,7 +757,14 @@ class PlotMeasureViewModel(
             runCatching {
                 val report = reportExporter.buildReport(project, pageState, _uiState.value.settings)
                 withContext(Dispatchers.IO) {
-                    reportExporter.exportToUri(uri, format, report)
+                    reportExporter.exportToUri(
+                        uri = uri,
+                        format = format,
+                        report = report,
+                        project = project,
+                        pageState = pageState,
+                        settings = _uiState.value.settings,
+                    )
                 }
             }.onSuccess {
                 _uiState.value =

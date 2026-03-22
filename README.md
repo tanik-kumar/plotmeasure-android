@@ -4,9 +4,11 @@ PlotMeasure is an Android app for measuring land/plot distance, perimeter, and a
 
 ## About
 
-PlotMeasure is built for land and cadastral PDF maps, especially survey sheets that include printed ratio scales, text scales, or scale bars. The app lets users import a map PDF, select a page, calibrate the page scale, place boundary points, and calculate distance, perimeter, and area in both standard and local land units.
+Native macOS app for measuring plot and land area from cadastral, survey, and revisional map PDFs using calibration and polygon tracing.
 
-This repository contains the Android source code, release configuration, tests, and signed release packaging workflow for `v1.0.0`.
+Releases: https://github.com/tanik-kumar/plot-measure-pro/releases
+
+Topics: `macos`, `swift`, `pdf`, `pdfkit`, `swiftui`, `land-measurement`, `cadastral-maps`, `survey-maps`, `revisional-map`
 
 ## Stack
 

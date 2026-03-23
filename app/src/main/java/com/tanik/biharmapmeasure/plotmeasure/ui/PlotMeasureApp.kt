@@ -170,7 +170,7 @@ fun PlotMeasureApp(viewModel: PlotMeasureViewModel) {
                 CenterAlignedTopAppBar(
                     title = {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                            Text("PlotMeasure v1.0.0", fontWeight = FontWeight.Bold)
+                            Text("PlotMeasure v1.1.0", fontWeight = FontWeight.Bold)
                             Text(
                                 text =
                                     uiState.project?.pdfDisplayName

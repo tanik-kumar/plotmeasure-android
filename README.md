@@ -14,16 +14,16 @@ Topics: `android`, `kotlin`, `jetpack-compose`, `pdf`, `pdf-renderer`, `land-mea
 
 - Platform: Android
 - Minimum Android version: `minSdk 24` (`Android 7.0`)
-- Latest signed release APK: `PlotMeasure-v1.0.0-release.apk`
+- Latest signed release APK: `PlotMeasure-v1.1.0-release.apk`
 - GitHub releases: https://github.com/tanik-kumar/plotmeasure-android/releases
-- SHA-256: `d5d9cef4127d15598f0a8c70304b37300e381cd7f420c77e41ae74ddb1eb57d9`
+- SHA-256: `c2531adc0b3e21f1ba22e800652386af79137c9a06a9d93c9bb599382c5d4bbf`
 
 Direct install steps:
 
 1. Download the signed APK from the GitHub Releases page.
 2. Allow installation from the browser or file manager if Android asks.
 3. Open the APK and install.
-4. Launch `PlotMeasure v1.0.0`.
+4. Launch `PlotMeasure v1.1.0`.
 
 ## Screenshots
 
@@ -75,7 +75,7 @@ The improved layer adds:
 - Selected-point deletion
 - Undo/redo
 - Calibration presets
-- Export to JSON and CSV
+- Export to JSON, CSV, and annotated PDF
 - Layer visibility toggles
 - Configurable Bihar land-unit conversions
 - Magnifier loupe
@@ -200,7 +200,7 @@ This reduces memory pressure versus rendering the full page at extreme zoom whil
 
 ## Known Limitations
 
-- OCR-based automatic scale extraction is not included in `v1.0.0`.
+- OCR-based automatic scale extraction is not included in `v1.1.0`.
 - Measurement accuracy depends on PDF quality, page calibration, and point placement precision.
 - Edge snapping is bitmap-based and may be less reliable on noisy scans.
 - Very large or highly detailed PDFs can still require more render time during deep zoom.
@@ -240,7 +240,7 @@ For a signed release build:
    - saved preset
 4. Tap around the plot boundary.
 5. Switch to `Edit` to drag or insert points.
-6. Export JSON or CSV from the top bar.
+6. Export PDF, JSON, or CSV from the top bar.
 
 ## Tests
 
@@ -252,12 +252,11 @@ Run:
 
 ## Release Notes
 
-Current release: `v1.0.0`
+Current release: `v1.1.0`
 
-- First signed Android release
-- PDF calibration and polygon tracing workflow
-- Distance, perimeter, and area calculation
-- Local land-unit conversion support
-- Export support and stable large-view editing
+- Annotated PDF export with one extra details page
+- Calibration overlay included in exported PDF when manual calibration points are stored
+- Thin-outline, small-label export styling for printed map output
+- Existing JSON/CSV export and large-view editing remain available
 
 See [CHANGELOG.md](/Users/tanik/Projects/biharmapmeasure/CHANGELOG.md) for the detailed history.

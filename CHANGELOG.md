@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-03-23
+
+### Added
+
+- Annotated PDF export with the measured map page drawn directly into the export
+- Extra export details page with project, page, calibration, and plot summaries
+- Calibration reference line/points included in exported PDF when manual calibration points are available
+
+### Changed
+
+- Export styling now uses thinner polygon outlines and smaller labels for cleaner printed output
+- Export dialog now offers PDF alongside JSON and CSV
+
 ## [1.0.0] - 2026-03-22
 
 ### Added

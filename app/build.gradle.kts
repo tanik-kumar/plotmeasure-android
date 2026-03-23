@@ -13,7 +13,7 @@ val keystoreProperties = Properties().apply {
     }
 }
 val hasReleaseSigning = keystorePropertiesFile.exists()
-val releaseVersionName = "1.0.0"
+val releaseVersionName = "1.1.0"
 
 android {
     namespace = "com.tanik.biharmapmeasure"
@@ -23,7 +23,7 @@ android {
         applicationId = "com.tanik.biharmapmeasure"
         minSdk = 24
         targetSdk = 34
-        versionCode = 3
+        versionCode = 4
         versionName = releaseVersionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
